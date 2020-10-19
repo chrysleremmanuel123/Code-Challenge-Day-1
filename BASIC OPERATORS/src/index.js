@@ -6,11 +6,28 @@
 
 
 //write a function to return the value based on operator.
-function basicOp(operation,value1,value2){
+let result;
+//var invalid = 'Invaild Operator';
+function basicOp(operation, value1, value2) {
+  if (operation == "+") {
+    result = value1 + value2;
+  }
 
+  else if (operation == "-") {
+    result = value1 - value2;
+  }
 
+  else if (operation == "*") {
+    result = value1 * value2;
+  }
 
-  return null;
+  else if (operation == "/") {
+    result = value1 / value2;
+  }
+  else {
+    result = "Invalid Operator"
+  }
+  return result;
 }
 
 //Run SpecRunner.html to check the Test Case

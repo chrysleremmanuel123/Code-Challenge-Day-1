@@ -11,9 +11,14 @@
 
 
 //Write a function to return the route to her home
-function find_Route(number){
-    
-    return null;
+let unit;
+let tens;
+let result;
+var find_Route = function (number) {
+    unit = Math.trunc(number % 10);
+    tens = Math.trunc((number / 10) % 10);
+    result = unit + tens;
+    return result;
 }
 
 //Run SpecRunner.html to check the Test Case.
